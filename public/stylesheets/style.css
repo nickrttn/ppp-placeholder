@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'majesti_banner';
+    src: url('../fonts/majesti-banner-heavy-webfont.eot');
+    src: url('../fonts/majesti-banner-heavy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/majesti-banner-heavy-webfont.woff2') format('woff2'),
+         url('../fonts/majesti-banner-heavy-webfont.woff') format('woff'),
+         url('../fonts/majesti-banner-heavy-webfont.ttf') format('truetype'),
+         url('../fonts/majesti-banner-heavy-webfont.svg#majesti_bannerheavy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+* + * {
+	margin-top: calc(.5em + 1.5vw);
+}
+
+body {
+    font: 300 1.25em/1.5 'Open Sans', 'sans-serif';
+    font-size: calc(1.25em + .5vw);
+    background: #a8d9d9;
+    color: #222;
+}
+
+section {
+    padding: 5vw 10vw;
+}
+
+h1 {
+	font-family: majesti_banner;
+	font-size: calc(2.5em + 2vw);
+	line-height: 1.2;
+    color: #fff;
+	text-rendering: optimizeLegibility;
+	font-feature-settings: 'liga', 'kern', 'swsh';
+	font-kerning: normal;
+	font-variant: common-ligatures;
+    text-shadow: 0 2px 0 rgba(100, 217, 217, 1.0);
+}
+
+p {
+    max-width: 60vw;
+    font-weight: bolder;
+}
+
+a {
+    color: #222;
+    transition: all 200ms ease-in-out;
+    padding: .1em;
+    margin-left: -.1em;
+}
+
+a:hover {
+    background: black;
+    color: #a8d9d9;
+}
+
+@media screen and (min-width: 60em) {
+    h1 {
+        font-size: calc(3em + 2vw);
+    }
+}
+
+@media screen and (min-width: 75em) {
+    h1 {
+        font-size: calc(4em + 2vw);
+    }
+}
