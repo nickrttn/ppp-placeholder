@@ -24,7 +24,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(connectFonts.setup({
     fonts: [fontpack],
-    allow_origin: ['localhost:3000', 'http://pennyparkerpaper.com/']
+    allow_origin: ['localhost:3000', 'http://pennyparkerpaper.com/', 'https://ancient-reaches-7779.herokuapp.com/', 'http://ancient-reaches-7779.herokuapp.com/']
 }));
 
 app.use('/', routes);
